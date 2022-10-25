@@ -15,7 +15,9 @@
     "up-latest": "yarn up --latest",
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
@@ -30,15 +32,25 @@
     "react-router-dom": "^6.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
     "@commitlint/config-conventional": "^17.1.0",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "^18.11.3",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@types/react-helmet": "^6.1.5",
     "@vitejs/plugin-react": "^2.1.0",
+    "babel-loader": "^8.2.5",
     "commitlint": "^17.1.2",
     "eslint": "^8.26.0",
     "eslint-config-sznm": "^1.0.0",
+    "eslint-plugin-storybook": "^0.6.6",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
