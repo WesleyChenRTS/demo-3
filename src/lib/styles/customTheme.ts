@@ -1,15 +1,24 @@
 import { extendTheme } from "@chakra-ui/react";
 
-export const theme = extendTheme({
+const theme = extendTheme({
   fonts: {
     heading: "Plus Jakarta Sans, sans-serif",
     body: "Plus Jakarta Sans, sans-serif",
   },
+
   components: {
-    // Button: {
-    // }
+    Button: {
+      // 1. We can update the base styles
+      baseStyle: {
+        fontWeight: "bold", // Normally, it is "semibold"
+        color: "pink",
+      },
+    },
   },
+
   config: {
     initialColorMode: "light",
   },
 });
+
+export default theme;
